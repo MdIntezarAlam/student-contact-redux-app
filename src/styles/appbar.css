@@ -1,0 +1,25 @@
+.appbar {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.app_heading {
+    color: #fff;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.appimg {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.appimg:hover {
+    cursor: pointer;
+}
