@@ -3,14 +3,14 @@
 const initialState = [
     {
         id: 1,
-        name: "Bhai",
-        email: "bhai@gmail.com",
+        name: "Md Intezar Alam",
+        email: "in13@gmail.com",
         number: 1234567890,
     },
     {
         id: 2,
-        name: "Shab",
-        email: "shab@gmail.com",
+        name: "Nitesh Singh",
+        email: "nit@gmail.com",
         number: 2234567890,
     },
 ]
