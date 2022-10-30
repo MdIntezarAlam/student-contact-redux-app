@@ -12,24 +12,7 @@ export default function Home() {
 
   const dispatch = useDispatch()
   //delete the contact
-  const render = contact.map((item) => {
-    const { id, name, email, number } = item
 
-    return (
-      <div className='table_box_2'>
-        <div>{id}</div>
-        <div>{name}</div>
-        <div>{email}</div>
-        <div>{number}</div>
-        <div className='action_btn'>
-          <Link to={`/edit/${id}`}>
-            <button className='btn1'>Edit</button>
-          </Link>
-          <button type='button' className='btn2' onClick={() => deleteContact(item.id)}>Delete</button>
-        </div>
-      </div>
-    )
-  })
   const deleteContact = (id) => {
     console.log(dispatch({ type: "DELETE_CONTACT", payload: id }))
     toast.success("contact Deleted Successfuly! ")
@@ -53,7 +36,25 @@ export default function Home() {
           <div>Number</div>
           <div>Action</div>
         </div>
-        {render}
+        {
+          contact.map((item) => {
+            const { id, name, email, number } = item
+            return (
+              <div className='table_box_2'>
+                <div>{id}</div>
+                <div>{name}</div>
+                <div>{email}</div>
+                <div>{number}</div>
+                <div className='action_btn'>
+                  <Link to={`/edit/${id}`}>
+                    <button className='btn1'>Edit</button>
+                  </Link>
+                  <button type='button' className='btn2' onClick={() => deleteContact(item.id)}>Delete</button>
+                </div>
+              </div>
+            )
+          })
+        }
       </div>
     </div>
   )
