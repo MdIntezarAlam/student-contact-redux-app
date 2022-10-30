@@ -33,7 +33,7 @@
 /* table */
 
 .AllTable {
-    width: 90vw;
+    width: 100%;
     height: 50vh;
     background-color: #fff;
     margin: auto;
@@ -43,7 +43,7 @@
 }
 
 .table_box {
-    width: 55.vh;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     background-color: black;
@@ -54,7 +54,7 @@
 }
 
 .table_box_2 {
-    width: 55.vh;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     background-color: rgb(174, 174, 174);
